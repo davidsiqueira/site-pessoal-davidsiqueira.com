@@ -235,7 +235,7 @@ footer .social-icons li a {
     font-size: .6em;
     margin: 4px;
     background-color: #8dc63f;
-    border-radius: 50%;
+    border-radius: 20px;
     color: transparent;
     overflow: hidden;
     text-decoration: none;
@@ -378,13 +378,16 @@ p {
 .small {
     font-size: .8em;
     padding: 0;
-    }
-.emoticon{
-    transition:all .3s ease;
 }
-.emoticon:hover{
-	transform: rotate(45deg);
+
+.emoticon {
+    transition: all .3s ease;
 }
+
+.emoticon:hover {
+    transform: rotate(45deg);
+}
+
 
 /* 4. COLORS */
 
@@ -423,7 +426,7 @@ nav.main-nav a:hover {
     background-color: #3acfd4;
     width: 300vw;
     height: 294vw;
-    border-radius: 50%;
+    border-radius: 200vw;
     z-index: -10;
     animation: giro 12s linear infinite;
 }
