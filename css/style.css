@@ -240,17 +240,17 @@ footer .social-icons li a {
     overflow: hidden;
     text-decoration: none;
     transition: transform .1s ease, box-shdow .1s ease;
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 footer .social-icons li a:hover {
     transform: scale(1.1) translateY(-4px);
-    box-shadow: 0 4px 0 -1px rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 2px 8px rgba(0, 0, 0, .1);
 }
 
 footer .social-icons li a:active {
     transform: scale(1) translateY(0);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .social-icons .icon a {
@@ -378,8 +378,13 @@ p {
 .small {
     font-size: .8em;
     padding: 0;
+    }
+.emoticon{
+    transition:all .3s ease;
 }
-
+.emoticon:hover{
+	transform: rotate(45deg);
+}
 
 /* 4. COLORS */
 
@@ -393,7 +398,8 @@ nav.main-nav a:hover {
 
 .color-blue .gradiente,
 .color-blue .big-sphere,
-.color-blue footer {
+.color-blue footer,
+.color-blue body {
     background: rgb(41, 203, 217);
     background: -moz-linear-gradient(left, rgba(41, 203, 217, 1) 0%, rgba(175, 238, 183, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(41, 203, 217, 1) 0%, rgba(175, 238, 183, 1) 100%);
@@ -412,11 +418,11 @@ nav.main-nav a:hover {
 
 .big-sphere {
     position: absolute;
-    bottom: 65px;
+    bottom: 70px;
     left: -100%;
     background-color: #3acfd4;
     width: 300vw;
-    height: 290vw;
+    height: 294vw;
     border-radius: 50%;
     z-index: -10;
     animation: giro 12s linear infinite;
